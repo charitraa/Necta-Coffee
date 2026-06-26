@@ -139,6 +139,147 @@
   }
 }
 
+/* Nav link hover + active styles */
+.header__menu_item {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+
+.header__menu_item:hover {
+  color: #a7897b;
+}
+
+.header__menu_li--active .header__menu_item {
+  color: #3e2c23;
+  font-weight: 700;
+}
+
+/* -----------------------------------------------------------------------
+   "What Makes Us Special" multicolumn cards hover animations
+   ----------------------------------------------------------------------- */
+
+/* Card lift + shadow */
+.multicolumn-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.multicolumn-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(62, 44, 35, 0.16);
+}
+
+/* Image zoom */
+.multicolumn-card__image {
+  transition: transform 0.45s ease;
+  display: block;
+  width: 100%;
+}
+
+.multicolumn-card:hover .multicolumn-card__image {
+  transform: scale(1.07);
+}
+
+/* Image wrapper clips the zoom */
+.multicolumn-card__image-wrapper .media {
+  overflow: hidden;
+}
+
+/* Info panel background tint on hover */
+.multicolumn-card:hover .multicolumn-card__info {
+  background: #ede8e5 !important;
+  transition: background 0.3s ease;
+}
+
+.multicolumn-card__info {
+  transition: background 0.3s ease;
+}
+
+/* "Explore More" arrow slides right on hover */
+.multicolumn-card .right__btn_svg {
+  display: inline-flex;
+  transition: transform 0.25s ease;
+}
+
+.multicolumn-card:hover .right__btn_svg {
+  transform: translateX(5px);
+}
+
+/* "Explore More" link colour shift */
+.multicolumn-card a.link.with--icon {
+  transition: color 0.2s ease;
+}
+
+.multicolumn-card:hover a.link.with--icon {
+  color: #a7897b;
+}
+
+/* Footer link hover */
+.footer__widget_inner ul li a {
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer__widget_inner ul li a:hover {
+  color: #a7897b;
+  padding-left: 6px;
+}
+
+/* Footer social icon hover lift */
+.list-social__link {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.list-social__link:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 14px rgba(62, 44, 35, 0.18) !important;
+}
+
+/* Product card hover lift */
+.product-grid-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-grid-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(62, 44, 35, 0.14);
+}
+
+/* Product card image zoom on hover */
+.product-grid-item .media img {
+  transition: transform 0.4s ease;
+}
+
+.product-grid-item:hover .media img {
+  transform: scale(1.05);
+}
+
+/* Add to cart / button hover */
+.button:not(.necta-shop-now),
+.btn:not(.necta-shop-now) {
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:not(.necta-shop-now):hover,
+.btn:not(.necta-shop-now):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(62, 44, 35, 0.2);
+}
+
+/* Contact info row hover highlight */
+.necta-contact-row {
+  transition: background 0.2s ease;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.necta-contact-row:hover {
+  background: rgba(167, 137, 123, 0.07);
+}
+
 /* Push the CTA to the far right of the navbar */
 .necta-header-actions {
   display: flex;
