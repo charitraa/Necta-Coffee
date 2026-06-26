@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Necta Coffee — Products page
+   A clean, constrained product grid that reuses the theme's product-card
+   markup (.product-grid-item) so cards match the home page exactly.
+   ========================================================================== */
+
+.necta-products-wrap {
+  padding-bottom: 90px;
+}
+
+.necta-products-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.necta-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+@media screen and (max-width: 990px) {
+  .necta-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .necta-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .necta-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Each grid cell wraps one theme product card */
+.necta-card {
+  min-width: 0;
+}
+
+.necta-card .product-grid-item {
+  width: 100%;
+  margin: 0;
+}
+
+/* Force a clean, uniform portrait image ratio across all cards */
+.necta-card .media.media--portrait {
+  padding-bottom: 118%;
+}

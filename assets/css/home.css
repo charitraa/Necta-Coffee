@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Necta Coffee — Home page (index.html)
+   Home-only polish layered on top of the Shopify theme + base.css.
+   Shared chrome (logo, hero, breadcrumb) lives in base.css.
+   ========================================================================== */
+
+/* Smooth in-page anchor scrolling (nav -> sections) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Give the first section a little breathing room now that the
+   announcement bar has been removed from the top of the page. */
+#MainContent > .shopify-section:first-child {
+  padding-top: 8px;
+}
+
+/* Keep all product-card imagery tidy on the home sliders */
+.product-grid-item .media > img {
+  object-fit: cover;
+}
