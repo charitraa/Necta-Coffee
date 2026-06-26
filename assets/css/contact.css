@@ -5,6 +5,9 @@
 
 .necta-contact-wrap {
   padding-bottom: 90px;
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
 }
 
 .necta-contact-inner {
@@ -35,14 +38,17 @@
 }
 
 .necta-contact-info-title {
-  font-size: 1.8rem;
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-weight: var(--font-heading-weight);
+  font-size: 3rem;
   margin: 0 0 10px;
 }
 
 .necta-contact-info-lead {
   opacity: 0.7;
   margin-bottom: 34px;
-  font-size: 0.96rem;
+  font-size: 1.4rem;
   line-height: 1.7;
 }
 
@@ -59,8 +65,8 @@
 }
 
 .necta-contact-icon {
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   background: rgb(var(--color-foreground), 0.04);
   border: 1px solid rgba(var(--color-foreground), 0.12);
   border-radius: 50%;
@@ -68,13 +74,14 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .necta-contact-label {
   display: block;
+  font-family: var(--font-body-family);
   font-weight: 700;
-  font-size: 0.76rem;
+  font-size: 1.15rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -82,12 +89,13 @@
 }
 
 .necta-contact-value {
-  font-size: 1.02rem;
+  font-size: 1.45rem;
   line-height: 1.6;
 }
 
 .necta-contact-phone {
-  font-size: 1.3rem;
+  font-family: var(--font-body-family);
+  font-size: 1.85rem;
   font-weight: 700;
   color: rgb(var(--color-foreground));
   text-decoration: none;
